@@ -1,6 +1,6 @@
 {
   "name": "JSONWebToken",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "summary": "Swift library for JSON Web Tokens (JWT).",
   "homepage": "https://github.com/kylef/JSONWebToken.swift",
   "license": {
@@ -14,7 +14,7 @@
     "git": "https://github.com/kylef/JSONWebToken.swift.git",
     "tag": "2.2.0"
   },
-  "source_files": "Sources/*.swift",
+  "source_files": "Sources/**/*.swift",
   "platforms": {
     "ios": "8.0",
     "osx": "10.9",
