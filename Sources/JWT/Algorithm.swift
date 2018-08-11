@@ -1,6 +1,5 @@
 import Foundation
-import JWA
-
+//import JWA
 
 /// Represents a JSON Web Algorithm (JWA)
 /// https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40

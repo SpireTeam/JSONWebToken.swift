@@ -1,7 +1,6 @@
 import Foundation
 import CCommonCrypto
 
-
 extension HMACAlgorithm: SignAlgorithm, VerifyAlgorithm {
   public func sign(_ message: Data) -> Data {
     let context = UnsafeMutablePointer<CCHmacContext>.allocate(capacity: 1)
