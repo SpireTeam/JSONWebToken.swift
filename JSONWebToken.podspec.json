@@ -23,12 +23,10 @@
   },
   "requires_arc": true,
   "module_name": "JWT",
-  "exclude_files": [
-    "Sources/HMACCryptoSwift.swift"
-  ],
+  "exclude_files": ["Sources/HMACCryptoSwift.swift"],
   "pod_target_xcconfig": {
     "SWIFT_INCLUDE_PATHS": "$(PODS_ROOT)/JSONWebToken/"
   },
-  "preserve_paths": "CommonCrypto/{shim.h,module.modulemap}",
+  "preserve_paths": "CCommonCrypto/{shim.h,module.modulemap}",
   "pushed_with_swift_version": "3.0"
 }
