@@ -96,7 +96,7 @@ func load(_ jwt: String) throws -> (header: JOSEHeader, payload: ClaimSet, signa
     throw InvalidToken.decodeError("Signature is not correctly encoded as base64")
   }
 
-  return (header: header, payload: ClaimSet(claims: payload), signature: signature, signatureInput: signatureInput)
+  return (header: header, payload: ClaimSet(claims: payload, raw: payloadSegment), signature: signature, signatureInput: signatureInput)
 }
 
 // MARK: Signature Verification

@@ -15,10 +15,12 @@ func parseTimeInterval(_ value: Any?) -> Date? {
 }
 
 public struct ClaimSet {
-  var claims: [String: Any]
+  public var claims: [String: Any]
+  public var rawClaimSegment: String
 
-  public init(claims: [String: Any]? = nil) {
+  public init(claims: [String: Any]? = nil, raw: String? = nil) {
     self.claims = claims ?? [:]
+    self.rawClaimSegment = raw ?? ""
   }
 
   public subscript(key: String) -> Any? {
